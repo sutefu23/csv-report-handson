@@ -93,10 +93,12 @@ Claude Code の基本操作を一通り体験します
 
 ## 工程⓪ 準備
 
-リポジトリ直下で Claude Code を起動します
+`workspace/` ディレクトリの中で Claude Code を起動します。
+このシートはリポジトリ直下に置いたままにして、
+Claude Code には実際の作業ファイルだけを見せます
 
 ```bash
-cd csv-report-handson
+cd csv-report-handson/workspace
 claude
 ```
 
