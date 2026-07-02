@@ -32,7 +32,7 @@ jobs:
       - name: Build slides with Marp CLI
         run: |
           mkdir -p dist
-          npx --yes @marp-team/marp-cli@latest slides.md --html -o dist/index.html
+          npx --yes @marp-team/marp-cli@4.4.0 slides.md --html -o dist/index.html
           touch dist/.nojekyll
 
       - name: Upload Pages artifact
