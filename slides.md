@@ -73,6 +73,22 @@ Claude Code の基本操作を一通り体験します
 
 ---
 
+## Pythonが入っていない場合（uvを使う）
+
+[uv](https://docs.astral.sh/uv/) を入れると、Python本体のインストールを含めて環境構築が1コマンドで済みます。
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+```powershell
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+---
+
 ## 目次
 
 | 工程 | 内容 |
@@ -228,6 +244,27 @@ CLAUDE.md に次のルールを追記して:
 - コードを変更したら必ず pytest を実行する
 ```
 
+---
+
+## Pythonが入ってない方
+
+下記も追記するとClaude Codeが間違えにくくなります。
+
+```
+# pythonコマンド実行する時
+
+このマシンには python3 がないので`uv run python` を使ってください
+
+`uv run python -m report_tool.cli data/sales_2026.csv --month 2026-05`
+
+
+# テスト実行時
+
+pytestもuvを使ってください。
+
+`uv run --with pytest python -m pytest tests/`
+
+```
 ---
 
 ## 工程④ 反映を確認する
