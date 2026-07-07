@@ -159,7 +159,7 @@ loader → aggregate → cli の流れやデータの形式を説明してくれ
 プロンプト例:
 
 ```
-docs/bug_report.md にあるバグ報告を読んで、原因を調べて修正して。
+@docs/bug_report.md にあるバグ報告を読んで、原因を調べて修正して。
 修正できたら、再発防止の回帰テストを tests/ に書いて pytest で実行して
 ```
 
@@ -246,7 +246,7 @@ CLAUDE.md に次のルールを追記して:
 
 ---
 
-## Pythonが入ってない方
+## ※Pythonが入ってない方
 
 下記も追記するとClaude Codeが間違えにくくなります。
 
